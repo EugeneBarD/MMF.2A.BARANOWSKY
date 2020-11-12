@@ -31,35 +31,17 @@ void Abiturient::SetAbiturient(string surname, string name, string patronymic, s
   this->midMark = (float)sum / marks.size();
 };
 
-string Abiturient::GetSurname()
-{
+string Abiturient::GetSurname() { return this->surname; };
 
-};
+string Abiturient::GetName() { return this->name; };
 
-string Abiturient::GetName()
-{
+string Abiturient::GetPatronymic() { return this->patronymic; };
 
-};
+string Abiturient::GetAdress() { return this->adress; };
 
-string Abiturient::GetPatronymic()
-{
+vector<int> Abiturient::GetMarks() { return this->marks; };
 
-};
-
-string Abiturient::GetAdress()
-{
-
-};
-
-vector<int> Abiturient::GetMarks()
-{
-
-};
-
-float Abiturient::GetMidMark()
-{
-
-};
+float Abiturient::GetMidMark() { return this->midMark; };
 
 void Abiturient::EnterAbiturient()
 {
