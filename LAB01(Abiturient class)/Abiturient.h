@@ -1,34 +1,41 @@
 #ifndef abiturient_h
 #define abiturient_h
+#include <string>
+#include <vector>
 
-class Abiturient {
+using namespace std;
+
+class Abiturient 
+{
 public:
+
   Abiturient() {}
-  Abiturient(char *, char *, char *, char *, int *);
+  Abiturient(string, string, string, string, vector<int>);
   ~Abiturient(){};
 
-  void SetSurname(char *);
-  void SetName(char *);
-  void SetPatronymic(char *);
-  void SetAdress(char *);
-  void SetMarks(int *);
+  void SetSurname(string);
+  void SetName(string);
+  void SetPatronymic(string);
+  void SetAdress(string);
+  void SetMarks(vector<int>);
 
-  void SetAbiturient();
+  void SetAbiturient(string, string, string, string, vector<int>);
 
-  char *GetSurname();
-  char *GetName();
-  char *GetPatronymic();
-  char *GetAdress();
-  int *GetMarks();
-  int GetMidMark();
+  string GetSurname();
+  string GetName();
+  string GetPatronymic();
+  string GetAdress();
+  vector<int> GetMarks();
+  float GetMidMark();
 
   void EnterAbiturient();
   void DisplayAbiturient();
 
 private:
-  char surname[32] = "", name[16] = "", patronymic[32] = "", adress[64] = "";
-  int marks[6];
-  int midMark;
+
+  string surname = "", name = "", patronymic = "", adress = "";
+  vector<int> marks;
+  float midMark;
 };
 
 #endif
