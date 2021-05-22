@@ -1,3 +1,3 @@
 # Laboratory works
-## Author of solutions: Baranowsky Eugene
-###  MMF BSU 2020 - 2021 
+## 
+######  MMF BSU 2020 - 2021                                                                                                                Author of solutions: Baranowsky Eugene
